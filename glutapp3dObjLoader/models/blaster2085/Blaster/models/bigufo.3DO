@@ -1,0 +1,140 @@
+! .3do 3D model (ver 3) filename d:\Dev\OpenGL\Blaster\models\bigufo.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert 2.000 1.000 0.000
+vert 1.000 1.000 1.732
+vert -1.000 1.000 1.732
+vert -2.000 1.000 -0.000
+vert -1.000 1.000 -1.732
+vert 1.000 1.000 -1.732
+vert 2.000 -1.000 0.000
+vert 1.000 -1.000 1.732
+vert -1.000 -1.000 1.732
+vert -2.000 -1.000 -0.000
+vert -1.000 -1.000 -1.732
+vert 1.000 -1.000 -1.732
+vert 8.000 1.000 0.000
+vert 6.928 1.000 4.000
+vert 4.000 1.000 6.928
+vert 0.000 1.000 8.000
+vert -4.000 1.000 6.928
+vert -6.928 1.000 4.000
+vert -8.000 1.000 0.000
+vert -6.928 1.000 -4.000
+vert -4.000 1.000 -6.928
+vert -0.000 1.000 -8.000
+vert 4.000 1.000 -6.928
+vert 6.928 1.000 -4.000
+vert -4.000 -1.000 -6.928
+vert -0.000 -1.000 -8.000
+vert 4.000 -1.000 -6.928
+vert 6.928 -1.000 -4.000
+vert 8.000 -1.000 0.000
+vert 6.928 -1.000 4.000
+vert 4.000 -1.000 6.928
+vert 0.000 -1.000 8.000
+vert -4.000 -1.000 6.928
+vert -6.928 -1.000 4.000
+vert -8.000 -1.000 0.000
+vert -6.928 -1.000 -4.000
+vert 0.000 -4.000 0.000
+vert 0.000 -1.000 -1.700
+vert -1.500 -1.000 -0.867
+vert -1.500 -1.000 0.867
+vert 0.000 -1.000 1.733
+vert 1.467 -1.000 0.900
+vert 1.467 -1.000 -0.867
+! polygon normals:
+! then, the polygons:
+poly 3 27 26 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 26 25 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 25 36 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 36 35 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 35 34 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 34 33 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 33 32 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 32 31 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 31 30 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 30 29 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 29 28 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 3 28 27 37 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 4 10 11 5 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 5 11 12 6 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 6 12 7 1 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 1 7 8 2 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 2 8 9 3 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 3 9 10 4 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 11 25 26 38 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 38 26 27 12 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 12 27 28 43 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 43 28 29 7 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 7 29 30 42 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 42 30 31 8 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 8 31 32 41 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 41 32 33 9 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 9 33 34 40 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 40 34 35 10 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 10 35 36 39 none
+filling 0
+colour 0 0.500 0.500 0.500
+poly 4 39 36 25 11 none
+filling 0
+colour 0 0.500 0.500 0.500
+! must end off with 'end'...
+end

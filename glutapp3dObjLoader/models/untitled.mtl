@@ -1,0 +1,81 @@
+# Blender MTL File: 'None'
+# Material Count: 8
+
+newmtl Material
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.001_One_star
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd OneStar.png
+
+newmtl Material.002_Two_stars
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd TwoStars.png
+
+newmtl Material.003_Three_stars
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ThreeStars.png
+
+newmtl Material.004_Four_stars
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd FourStars.png
+
+newmtl Material.005_Five_stars
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd FiveStars.png
+
+newmtl Material.006_Six_stars
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd SixStars.png
+
+newmtl Material.007_Seven_stars
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.421360 0.257266 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd SevenStars.png

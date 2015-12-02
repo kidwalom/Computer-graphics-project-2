@@ -1,0 +1,24 @@
+! .3do 3D model (ver 3) filename e:\Dev\OpenGL\Blaster2\models\bullet2.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert -2.000 2.000 -2.000
+vert 2.000 2.000 -2.000
+vert 2.000 -2.000 -2.000
+vert -2.000 -2.000 -2.000
+vert 0.000 0.000 4.000
+! polygon normals:
+! then, the polygons:
+poly 3 4 5 3 none
+filling 0
+colour 0 0.984 0.734 0.539
+poly 3 2 5 1 none
+filling 0
+colour 0 0.984 0.734 0.539
+poly 3 1 5 4 none
+filling 0
+colour 0 0.984 0.414 0.391
+poly 3 3 5 2 none
+filling 0
+colour 0 0.984 0.414 0.391
+! must end off with 'end'...
+end

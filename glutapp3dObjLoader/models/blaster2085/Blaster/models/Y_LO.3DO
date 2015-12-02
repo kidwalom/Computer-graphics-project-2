@@ -1,0 +1,93 @@
+! .3do 3D model (ver 3) filename e:\minigp32\projects\gyruss\models\Y_LO.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert -6.000 8.000 -2.000
+vert -2.000 8.000 -2.000
+vert 2.000 8.000 -2.000
+vert 6.000 8.000 -2.000
+vert -2.000 0.000 -2.000
+vert 2.000 0.000 -2.000
+vert -2.000 -8.000 -2.000
+vert 2.000 -8.000 -2.000
+vert 0.000 4.000 -2.000
+vert -6.000 8.000 2.000
+vert -2.000 8.000 2.000
+vert 2.000 8.000 2.000
+vert 6.000 8.000 2.000
+vert -2.000 0.000 2.000
+vert 2.000 0.000 2.000
+vert -2.000 -8.000 2.000
+vert 2.000 -8.000 2.000
+vert 0.000 4.000 2.000
+! polygon normals:
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 1.000 0.000 0.000
+norm -1.000 0.000 0.000
+norm 0.000 1.000 0.000
+norm 0.000 1.000 0.000
+norm 0.000 -1.000 0.000
+norm 0.894 -0.447 0.000
+norm -0.894 -0.447 0.000
+norm 0.894 0.447 0.000
+norm -0.894 0.447 0.000
+! then, the polygons:
+poly 4 5 9 2 1 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 3 9 6 4 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 3 6 9 5 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 5 7 8 6 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 12 13 15 18 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 11 18 14 10 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 3 15 14 18 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 15 17 16 14 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 6 8 17 15 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 14 16 7 5 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 10 1 2 11 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 12 3 4 13 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 16 17 8 7 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 6 15 13 4 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 1 10 14 5 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 2 9 18 11 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 3 12 18 9 none
+filling 0
+colour 0 0.289 0.641 0.781
+! must end off with 'end'...
+end

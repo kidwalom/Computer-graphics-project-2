@@ -1,0 +1,428 @@
+! .3do 3D model (ver 3) filename e:\Dev\OpenGL\Blaster\models\mesh1.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert -20.000 0.000 -20.000
+vert -16.000 0.000 -20.000
+vert -12.000 0.000 -20.000
+vert -8.000 0.000 -20.000
+vert -4.000 0.000 -20.000
+vert 0.000 0.000 -20.000
+vert 4.000 0.000 -20.000
+vert 8.000 0.000 -20.000
+vert 12.000 0.000 -20.000
+vert 16.000 0.000 -20.000
+vert 20.000 0.000 -20.000
+vert -20.000 0.000 -16.000
+vert -16.000 0.000 -16.000
+vert -12.000 0.000 -16.000
+vert -8.000 0.000 -16.000
+vert -4.000 0.000 -16.000
+vert 0.000 0.000 -16.000
+vert 4.000 0.000 -16.000
+vert 8.000 0.000 -16.000
+vert 12.000 0.000 -16.000
+vert 16.000 0.000 -16.000
+vert 20.000 0.000 -16.000
+vert -20.000 0.000 -12.000
+vert -16.000 0.000 -12.000
+vert -12.000 0.000 -12.000
+vert -8.000 0.000 -12.000
+vert -4.000 0.000 -12.000
+vert 0.000 0.000 -12.000
+vert 4.000 0.000 -12.000
+vert 8.000 0.000 -12.000
+vert 12.000 0.000 -12.000
+vert 16.000 0.000 -12.000
+vert 20.000 0.000 -12.000
+vert -20.000 0.000 -8.000
+vert -16.000 0.000 -8.000
+vert -12.000 0.000 -8.000
+vert -8.000 0.000 -8.000
+vert -4.000 0.000 -8.000
+vert 0.000 0.000 -8.000
+vert 4.000 0.000 -8.000
+vert 8.000 0.000 -8.000
+vert 12.000 0.000 -8.000
+vert 16.000 0.000 -8.000
+vert 20.000 0.000 -8.000
+vert -20.000 0.000 -4.000
+vert -16.000 0.000 -4.000
+vert -12.000 0.000 -4.000
+vert -8.000 0.000 -4.000
+vert -4.000 0.000 -4.000
+vert 0.000 0.000 -4.000
+vert 4.000 0.000 -4.000
+vert 8.000 0.000 -4.000
+vert 12.000 0.000 -4.000
+vert 16.000 0.000 -4.000
+vert 20.000 0.000 -4.000
+vert -20.000 0.000 20.000
+vert -16.000 0.000 20.000
+vert -12.000 0.000 20.000
+vert -8.000 0.000 20.000
+vert -4.000 0.000 20.000
+vert 0.000 0.000 20.000
+vert 4.000 0.000 20.000
+vert 8.000 0.000 20.000
+vert 12.000 0.000 20.000
+vert 16.000 0.000 20.000
+vert 20.000 0.000 20.000
+vert -20.000 0.000 16.000
+vert -16.000 0.000 16.000
+vert -12.000 0.000 16.000
+vert -8.000 0.000 16.000
+vert -4.000 0.000 16.000
+vert 0.000 0.000 16.000
+vert 4.000 0.000 16.000
+vert 8.000 0.000 16.000
+vert 12.000 0.000 16.000
+vert 16.000 0.000 16.000
+vert 20.000 0.000 16.000
+vert -20.000 0.000 12.000
+vert -16.000 0.000 12.000
+vert -12.000 0.000 12.000
+vert -8.000 0.000 12.000
+vert -4.000 0.000 12.000
+vert 0.000 0.000 12.000
+vert 4.000 0.000 12.000
+vert 8.000 0.000 12.000
+vert 12.000 0.000 12.000
+vert 16.000 0.000 12.000
+vert 20.000 0.000 12.000
+vert -20.000 0.000 8.000
+vert -16.000 0.000 8.000
+vert -12.000 0.000 8.000
+vert -8.000 0.000 8.000
+vert -4.000 0.000 8.000
+vert 0.000 0.000 8.000
+vert 4.000 0.000 8.000
+vert 8.000 0.000 8.000
+vert 12.000 0.000 8.000
+vert 16.000 0.000 8.000
+vert 20.000 0.000 8.000
+vert -20.000 0.000 4.000
+vert -16.000 0.000 4.000
+vert -12.000 0.000 4.000
+vert -8.000 0.000 4.000
+vert -4.000 0.000 4.000
+vert 0.000 0.000 4.000
+vert 4.000 0.000 4.000
+vert 8.000 0.000 4.000
+vert 12.000 0.000 4.000
+vert 16.000 0.000 4.000
+vert 20.000 0.000 4.000
+vert -20.000 0.000 0.000
+vert -16.000 0.000 0.000
+vert -12.000 0.000 0.000
+vert -8.000 0.000 0.000
+vert -4.000 0.000 0.000
+vert 0.000 0.000 0.000
+vert 4.000 0.000 0.000
+vert 8.000 0.000 0.000
+vert 12.000 0.000 0.000
+vert 16.000 0.000 0.000
+vert 20.000 0.000 0.000
+! polygon normals:
+! then, the polygons:
+poly 4 116 50 51 117 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 116 117 106 105 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 116 105 104 115 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 116 115 49 50 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 50 39 40 51 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 49 38 39 50 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 49 48 37 38 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 49 115 114 48 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 115 104 103 114 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 103 104 93 92 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 104 105 94 93 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 105 106 95 94 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 95 106 107 96 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 106 117 118 107 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 117 51 52 118 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 51 40 41 52 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 41 30 31 42 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 40 29 30 41 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 39 28 29 40 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 38 27 28 39 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 37 26 27 38 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 36 25 26 37 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 47 36 37 48 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 113 47 48 114 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 102 113 114 103 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 91 102 103 92 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 80 91 92 81 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 81 92 93 82 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 82 93 94 83 none
+filling 0
+colour 0 0.258 0.648 0.102
+poly 4 83 94 95 84 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 84 95 96 85 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 85 96 97 86 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 96 107 108 97 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 107 118 119 108 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 118 52 53 119 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 52 41 42 53 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 31 20 21 32 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 30 19 20 31 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 29 18 19 30 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 28 17 18 29 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 27 16 17 28 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 26 15 16 27 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 25 14 15 26 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 24 13 14 25 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 35 24 25 36 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 46 35 36 47 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 112 46 47 113 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 101 112 113 102 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 90 101 102 91 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 79 90 91 80 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 68 79 80 69 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 69 80 81 70 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 70 81 82 71 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 71 82 83 72 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 72 83 84 73 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 73 84 85 74 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 74 85 86 75 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 75 86 87 76 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 86 97 98 87 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 97 108 109 98 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 108 119 120 109 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 119 53 54 120 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 53 42 43 54 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 42 31 32 43 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 21 10 11 22 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 20 9 10 21 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 19 8 9 20 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 18 7 8 19 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 17 6 7 18 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 16 5 6 17 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 15 4 5 16 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 14 3 4 15 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 13 2 3 14 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 12 1 2 13 none
+filling 0
+colour 0 0.070 0.211 0.633
+poly 4 23 12 13 24 none
+filling 0
+colour 0 0.141 0.313 0.734
+poly 4 34 23 24 35 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 45 34 35 46 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 111 45 46 112 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 100 111 112 101 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 89 100 101 90 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 78 89 90 79 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 67 78 79 68 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 56 67 68 57 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 57 68 69 58 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 58 69 70 59 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 59 70 71 60 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 60 71 72 61 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 61 72 73 62 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 62 73 74 63 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 63 74 75 64 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 64 75 76 65 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 65 76 77 66 none
+filling 0
+colour 0 0.414 0.820 0.469
+poly 4 76 87 88 77 none
+filling 0
+colour 0 0.344 0.734 0.383
+poly 4 87 98 99 88 none
+filling 0
+colour 0 0.266 0.633 0.281
+poly 4 98 109 110 99 none
+filling 0
+colour 0 0.195 0.555 0.195
+poly 4 109 120 121 110 none
+filling 0
+colour 0 0.125 0.477 0.133
+poly 4 120 54 55 121 none
+filling 0
+colour 0 0.414 0.555 0.945
+poly 4 54 43 44 55 none
+filling 0
+colour 0 0.305 0.461 0.867
+poly 4 43 32 33 44 none
+filling 0
+colour 0 0.211 0.391 0.813
+poly 4 32 21 22 33 none
+filling 0
+colour 0 0.141 0.313 0.734
+! must end off with 'end'...
+end

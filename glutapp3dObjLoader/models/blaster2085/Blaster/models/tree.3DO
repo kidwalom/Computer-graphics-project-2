@@ -1,0 +1,100 @@
+! .3do 3D model (ver 3) filename e:\Dev\OpenGL\Blaster\models\tree.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert 3.148 3.200 0.000
+vert 1.600 3.200 2.668
+vert -1.424 3.200 2.668
+vert -2.952 3.200 0.000
+vert -1.424 3.200 -2.668
+vert 1.600 3.200 -2.668
+vert 3.148 3.200 0.000
+vert 0.000 16.000 0.000
+vert 0.728 0.000 -0.320
+vert 0.640 0.000 0.464
+vert -0.108 0.000 0.800
+vert -0.728 0.000 0.320
+vert -0.640 0.000 -0.464
+vert 0.108 0.000 -0.800
+vert 0.728 0.000 -0.320
+vert -0.072 3.200 -0.640
+vert -0.568 3.200 -0.248
+vert -0.496 3.200 0.372
+vert 0.072 3.200 0.640
+vert 0.568 3.200 0.248
+vert 0.496 3.200 -0.372
+! polygon normals:
+! then, the polygons:
+poly 3 6 1 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 1 2 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 2 3 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 3 4 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 4 5 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 5 6 8 none
+filling 0
+colour 0 0.355 0.723 0.004
+poly 3 21 16 14 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 14 9 21 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 16 17 14 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 13 14 17 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 17 18 12 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 12 13 17 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 18 19 11 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 11 12 18 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 19 20 10 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 10 11 19 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 20 21 9 none
+filling 0
+colour 0 0.578 0.367 0.004
+poly 3 9 10 20 none
+filling 0
+colour 0 0.578 0.367 0.004
+! must end off with 'end'...
+end
