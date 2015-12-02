@@ -75,6 +75,7 @@ private: // functions derived from the base class
 	virtual void glutMotion(int x, int y);
 	virtual void glutDisplay();
 	virtual void glutReshape(int w, int h);
+	virtual void glutIdle();
 	
 };
 

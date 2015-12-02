@@ -284,4 +284,25 @@ void AppWindow::glutDisplay()
 	glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
 }
 
+ void AppWindow::glutIdle() {
+	 
+	// if (_rotglobalx >= 0 && _rotglobalx <= .5) {
+		 _rotglobalx += .01;
 
+
+		 if (_rotglobalx   > .5)
+
+		 {
+			 //_rotglobalx = 0;
+		 }
+
+	// }
+
+
+
+
+
+	 redraw();
+
+
+}
