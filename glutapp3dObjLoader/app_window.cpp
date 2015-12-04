@@ -15,8 +15,8 @@ AppWindow::AppWindow(const char* label, int x, int y, int w, int h)
 	_w = w;
 	_h = h;
 	spaceships = 0.0;
-	spacexx = 0.0;
-	spaceyy = 0.0;
+	spacexx = 0.01;
+	spaceyy = 0.01;
 	selection = 0;
 }
 
@@ -139,7 +139,7 @@ void AppWindow::glutKeyboard(unsigned char key, int x, int y)
 {
 	const float incr = GS_TORAD(2.5f);
 	const float incf = 0.05f;
-	float spaceyyy=0;
+	float spaceyyy=.01;
 	switch (key)
 	{
 	//case ' ': _viewaxis = !_viewaxis; redraw(); break;
@@ -155,7 +155,7 @@ void AppWindow::glutKeyboard(unsigned char key, int x, int y)
 	case 'w': spacexx = spacexx - 0.01; redraw(); break;
 	case 'e': spaceyy = spaceyy + 0.01; redraw(); break;
 	case 'd': spaceyy = spaceyy - 0.01; redraw(); break;
-	case 'r': _rotxnew += incf; redraw(); break;
+	case 'r': redraw(); break;//_rotxnew += incf;
 	case 'f': _rotxnew -= incf; redraw(); break;
 	case 't': _rotynew += incf; redraw(); break;
 	case 'g': _rotynew -= incf; redraw(); break;
@@ -285,18 +285,29 @@ void AppWindow::glutDisplay()
 }
 
  void AppWindow::glutIdle() {
+	
 	 
-	// if (_rotglobalx >= 0 && _rotglobalx <= .5) {
-		 _rotglobalx += .01;
-
-
-		 if (_rotglobalx   > .5)
+	 
+	 //_rotglobalx += .01;
+	 if (_rotglobalx >= 0 && _rotglobalx <= .5) {
+	
+		 _rotglobalx += .001;
+		
+		
+		 
+		 if (_rotglobalx  > .3)
 
 		 {
 			 //_rotglobalx = 0;
+			 move1();
+		 }
+		 else
+		 if (_rotglobalx == .5) {
+			 move2();
 		 }
 
-	// }
+
+	 }
 
 
 
@@ -304,5 +315,38 @@ void AppWindow::glutDisplay()
 
 	 redraw();
 
+
+}
+void AppWindow::move1() {
+
+	 if (spacexx>0 &&spacexx<.2){
+	
+	 spacexx+=.3;
+
+	 if (spacexx >.5) {
+
+		 spacexx = 0;
+	 }
+	}
+	 redraw();
+	 //glFlush();         // flush the pipeline (usually not necessary)
+	// glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
+
+ }
+
+void AppWindow::move2() {
+
+	if (spaceyy>0 && spaceyy<.3) {
+
+		spaceyy += .3;
+
+		if (spaceyy >.9) {
+
+			spaceyy = 0;
+		}
+	}
+	redraw();
+	//glFlush();         // flush the pipeline (usually not necessary)
+	// glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
 
 }

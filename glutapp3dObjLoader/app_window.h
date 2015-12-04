@@ -76,7 +76,9 @@ private: // functions derived from the base class
 	virtual void glutDisplay();
 	virtual void glutReshape(int w, int h);
 	virtual void glutIdle();
-	
+	virtual void move1();
+	virtual void move2();
+
 };
 
 #endif // APP_WINDOW_H
