@@ -34,6 +34,7 @@ void AppWindow::initPrograms()
 		ground.init("../stars.bmp");
 		ground.build(2,60);
 		_world.phong(true);
+		PlaySound(TEXT("../starwars.wav"), NULL, SND_ASYNC);
 	// set light:
 	_light.set(GsVec(0, 10, 0), GsColor(90, 90, 90, 255), GsColor::white, GsColor::white);
 

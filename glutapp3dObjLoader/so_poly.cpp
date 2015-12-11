@@ -12,12 +12,12 @@ SoPoly::SoPoly()
 void SoPoly::init ( const GlProgram& prog, const GsColor& c, const GsColor& selc )
  {
    // Define buffers needed:
-   set_program ( prog );
+/*   set_program ( prog );
    gen_vertex_arrays ( 1 ); // will use 1 vertex array
    gen_buffers ( 2 );       // will use 2 buffers: one for coordinates and one for colors
    uniform_locations ( 2 ); // will send 2 variables: the 2 matrices below
    uniform_location ( 0, "vTransf" );
-   uniform_location ( 1, "vProj" );
+   uniform_location ( 1, "vProj" ); */
    _color = c;
    _selcolor = selc;
  }
@@ -115,10 +115,10 @@ void SoPoly::draw ( GsMat& tr, GsMat& pr )
     }
 
    // Draw Lines:
-   glUseProgram ( prog );
+/*   glUseProgram ( prog );
    glBindVertexArray ( va[0] );
    glUniformMatrix4fv ( uniloc[0], 1, GL_FALSE, tr.e );
-   glUniformMatrix4fv ( uniloc[1], 1, GL_FALSE, pr.e );
+   glUniformMatrix4fv ( uniloc[1], 1, GL_FALSE, pr.e );*/
 
    glDrawArrays ( GL_POINTS, 0, _polysize );
    glDrawArrays ( GL_LINE_STRIP, 0, _polysize );
