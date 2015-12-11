@@ -70,6 +70,12 @@
     <ClCompile Include="..\gsim\gs_image.cpp">
       <Filter>graphsim tools</Filter>
     </ClCompile>
+    <ClCompile Include="..\curve_eval.cpp">
+      <Filter>myapp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\so_poly.cpp">
+      <Filter>myapp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\gsim\gs.h">
@@ -149,6 +155,12 @@
     </ClInclude>
     <ClInclude Include="..\gsim\gs_image.h">
       <Filter>graphsim tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\curve_eval.h">
+      <Filter>myapp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\so_poly.h">
+      <Filter>myapp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

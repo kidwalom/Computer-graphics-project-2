@@ -14,6 +14,7 @@
 # include "material.h"
 # include "light.h"
 #include "so_textured_quad.h"
+#include "curve_eval.h"
 
 
 // The functionality of your application should be implemented inside AppWindow
@@ -59,14 +60,15 @@ private:
 	double spacexx;
 	int selection;
 	bool cam_view;
-
+	
 
 public:
 	AppWindow(const char* label, int x, int y, int w, int h);
 	void initPrograms();
 	void loadModel(int model);
 	GsVec2 windowToScene(const GsVec2& v);
-
+	bool running;
+	bool ran =false;
 private: // functions derived from the base class
 	virtual void glutMenu(int m);
 	virtual void glutKeyboard(unsigned char key, int x, int y);
@@ -78,6 +80,7 @@ private: // functions derived from the base class
 	virtual void glutIdle();
 	virtual void move1();
 	virtual void move2();
+	virtual void move4();
 
 };
 

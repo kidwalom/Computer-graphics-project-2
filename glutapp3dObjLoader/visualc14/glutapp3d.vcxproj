@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\app_main.cpp" />
+    <ClCompile Include="..\curve_eval.cpp" />
     <ClCompile Include="..\gsim\gs_image.cpp" />
     <ClCompile Include="..\gsim\gs_tree.cpp" />
     <ClCompile Include="..\gsim\gs_input.cpp" />
@@ -137,9 +138,11 @@
     <ClCompile Include="..\ogl_tools.cpp" />
     <ClCompile Include="..\so_model.cpp" />
     <ClCompile Include="..\so_myobject.cpp" />
+    <ClCompile Include="..\so_poly.cpp" />
     <ClCompile Include="..\so_textured_quad.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\curve_eval.h" />
     <ClInclude Include="..\gsim\gs_image.h" />
     <ClInclude Include="..\gsim\gs_manager.h" />
     <ClInclude Include="..\gsim\gs_tree.h" />
@@ -165,6 +168,7 @@
     <ClInclude Include="..\ogl_tools.h" />
     <ClInclude Include="..\so_model.h" />
     <ClInclude Include="..\so_myobject.h" />
+    <ClInclude Include="..\so_poly.h" />
     <ClInclude Include="..\so_textured_quad.h" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,38 @@
+﻿Build started 12/10/2015 7:25:52 PM.
+     1>Project "C:\Users\cnweke\Documents\GitHub\Computer-graphics-project-2\glutapp3dObjLoader\visualc14\glutapp3d.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../ /I../freeglut /I../glew /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\objloader_Debug\\" /Fd"obj\objloader_Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\app_window.cpp
+         app_window.cpp
+     1>c:\users\cnweke\documents\github\computer-graphics-project-2\glutapp3dobjloader\app_window.cpp(144): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>c:\users\cnweke\documents\github\computer-graphics-project-2\glutapp3dobjloader\app_window.cpp(231): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>c:\users\cnweke\documents\github\computer-graphics-project-2\glutapp3dobjloader\app_window.cpp(296): warning C4305: '+=': truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"obj\objloader_Debug\objloader.exe" /NOLOGO ../freeglut/freeglut.lib ../glew/glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"obj\objloader_Debug\objloader.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"obj\objloader_Debug\objloader.lib" /MACHINE:X86 /SAFESEH obj\objloader_Debug\app_main.obj
+         obj\objloader_Debug\gs_image.obj
+         obj\objloader_Debug\gs_tree.obj
+         obj\objloader_Debug\gs_input.obj
+         obj\objloader_Debug\gs_material.obj
+         obj\objloader_Debug\gs_model.obj
+         obj\objloader_Debug\gs_model_obj.obj
+         obj\objloader_Debug\gs_string.obj
+         obj\objloader_Debug\gs_strings.obj
+         obj\objloader_Debug\so_axis.obj
+         obj\objloader_Debug\app_window.obj
+         obj\objloader_Debug\glut_window.obj
+         obj\objloader_Debug\gs.obj
+         obj\objloader_Debug\gs_array.obj
+         obj\objloader_Debug\gs_color.obj
+         obj\objloader_Debug\gs_mat.obj
+         obj\objloader_Debug\gs_quat.obj
+         obj\objloader_Debug\gs_vec.obj
+         obj\objloader_Debug\gs_vec2.obj
+         obj\objloader_Debug\ogl_tools.obj
+         obj\objloader_Debug\so_model.obj
+         obj\objloader_Debug\so_myobject.obj
+         obj\objloader_Debug\so_textured_quad.obj
+         glutapp3d.vcxproj -> C:\Users\cnweke\Documents\GitHub\Computer-graphics-project-2\glutapp3dObjLoader\visualc14\obj\objloader_Debug\objloader.exe
+     1>Done Building Project "C:\Users\cnweke\Documents\GitHub\Computer-graphics-project-2\glutapp3dObjLoader\visualc14\glutapp3d.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.08
