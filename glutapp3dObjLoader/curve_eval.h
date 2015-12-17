@@ -9,8 +9,9 @@
 # include "so_poly.h"
 # include "math.h"
 
-void eval_bezier(int n, GsArray<GsVec>& curve, const GsArray<GsVec>& ctrlpnts);
+void evaluate_bezier(int resolution, GsArray<GsVec>& curve, const GsArray<GsVec>& points);
 void eval_lagrange(int n, GsArray<GsVec>& curve, const GsArray<GsVec>& ctrlpnts);
+
 GsVec eval_bsspline(int n, int k, float t, const GsArray<GsVec>& ctrlpnts);
 GsVec eval_crspline(float i, int n, const GsArray<GsVec>& ctrlpnts);
 GsVec eval_bezier(float t, const GsArray<GsVec>& ctrlpnts);

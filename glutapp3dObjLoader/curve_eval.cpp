@@ -11,6 +11,23 @@
 
 #include <vector>
 
+
+namespace
+{
+	float factorialf(float n)
+	{
+		if (n < 2.0f)
+			return 1.0f;
+
+		return n * factorialf(n - 1.0f);
+	}
+
+	float chooseFunctionf(float i, float n)
+	{
+		return factorialf(n) / (factorialf(i) * factorialf(n - i));
+	}
+}
+
 double choose(float n, float k) {
 	//return ((factorial(n)) / (factorial(k)*factorial(n - k)));
 	if (k > n) {
@@ -32,7 +49,7 @@ double choose(float n, float k) {
 }
 
 
-void eval_bezier(int n, GsArray<GsVec>& curve, const GsArray<GsVec>& ctrlpnts) {
+/*void eval_bezier(int n, GsArray<GsVec>& curve, const GsArray<GsVec>& ctrlpnts) {
 	int size = ctrlpnts.size();
 	curve.size(n);
 
@@ -48,8 +65,28 @@ void eval_bezier(int n, GsArray<GsVec>& curve, const GsArray<GsVec>& ctrlpnts) {
 		}
 		curve[t] = y;
 	}
-}
+}*/
 
+void evaluate_bezier(int resolution, GsArray<GsVec>& curve, const GsArray<GsVec>& points)
+{
+	int size = points.size();
+	curve.size(resolution);
+
+	// Do the thing
+	for (int ti = 0; ti < resolution; ti++)
+	{
+		float t = float(ti) / float(resolution - 1);
+		GsVec p(0, 0, 0);
+
+		for (int i = 0; i < size; i++)
+		{
+			float B = float(chooseFunctionf(i, size - 1)) * powf(t, i) * powf(1 - t, size - i - 1);
+			p += points[i] * B;
+		}
+
+		curve[ti] = p;
+	}
+}
 
 void eval_lagrange(int n, GsArray<GsVec>& curve, const GsArray<GsVec>& ctrlpnts) {
 	const int size = ctrlpnts.size();

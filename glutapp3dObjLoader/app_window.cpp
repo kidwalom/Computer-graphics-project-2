@@ -2,7 +2,15 @@
 # include <iostream>
 # include <gsim/gs.h>
 # include "app_window.h"
-
+#include <chrono>
+using namespace std::chrono;
+namespace {
+	template <typename T>
+	T lerp( const T& a, const T& b, float c) 
+	{
+		return a + c*(b - a);
+	}
+}
 AppWindow::AppWindow(const char* label, int x, int y, int w, int h)
 	:GlutWindow(label, x, y, w, h)
 {
@@ -157,7 +165,7 @@ void AppWindow::glutKeyboard(unsigned char key, int x, int y)
 	case 'w': spacexx = spacexx - 0.01; redraw(); break;
 	case 'e': spaceyy = spaceyy + 0.01; redraw(); break;
 	case 'd': spaceyy = spaceyy - 0.01; redraw(); break;
-	case 'r': running = true;  redraw(); break;//_rotxnew += incf;
+	case 'r':move1(); redraw(); break;//_rotxnew += incf;
 	case 'f': _rotxnew -= incf; redraw(); break;
 	case 't': _rotynew += incf; redraw(); break;
 	case 'g': _rotynew -= incf; redraw(); break;
@@ -286,61 +294,67 @@ void AppWindow::glutDisplay()
 	glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
 }
 
- void AppWindow::glutIdle() {
-	
+ void AppWindow::glutIdle() 
+ {
+	 static high_resolution_clock::time_point prevtime = high_resolution_clock::now();
+	 high_resolution_clock::time_point currentime = high_resolution_clock::now();
+	 float framedelta = duration_cast<duration<float>>(currentime - prevtime).count();
+	 prevtime = currentime;
+	 animutime += framedelta * 6;
 	 
-	 
-	 //_rotglobalx += .01;
-	 if (running ==true && _rotglobalx >= 0 && _rotglobalx <= 1.0) {
-	
-		 _rotglobalx += .01;
-		
-		
-		 
-		 if (_rotglobalx  > .3)
-
+	 // when ever animutime goes over 1 it goes to the next frame
+	 // fractional component is the distance between the frames
+	 if (currentanimu.size() > 0) 
+	 {
+		 if (animutime > 1) 
 		 {
-			 move1();
-		 }
-		 
-		 if (_rotglobalx > .5) {
-			 move2();
+			 int overage = floor(animutime);
+			 for (int i = 0; i < overage; i++) {
+				 currentanimu.remove(0);
+			 }
+			 animutime -= overage;
+			 if (currentanimu.size() < 2) {
+				 currentanimu.size(0);
+				 std::cout << "animation done" << std::endl;
+				 return;
+			 }
+			 std::cout << "new frame" << std::endl;
+			 //std::cout << " postion is" << currentanimu[0].x << " " << currentanimu[0].y << " " << currentanimu[0].z << std::endl;
+			 //
 		 }
 
-		if(_rotglobalx > .7) {
-			move4();
-			 
-
-		 }
-		
+		 GsVec a = currentanimu[0];
+		 GsVec b = currentanimu[1];
+		 GsVec currentpostion = lerp(a, b, animutime);
+		 //std::cout << "between " << a.x << " " << a.y << " " << a.z << " and " << b.x << " " << b.y << " " << b.z << std::endl;
+		 //std::cout << animutime << " postion is" << currentpostion.x << " " << currentpostion.y << " " << currentpostion.z << std::endl;
+		 spacexx = currentpostion.x;
+		 spaceyy = currentpostion.y;
+		 spaceships = currentpostion.z;
 	 }
-
-
-
-
-
 	 redraw();
-
-
 }
 void AppWindow::move1() {
-
-	 if (spacexx>=0 &&spacexx<=.2){
-	
-	 spacexx+=.01;
-
-	 if (spacexx >.2) {
-
-		 spacexx = 0;
-	 }
+	GsArray <GsVec> cntrlpoint;
+	cntrlpoint.size(15);
+	for (int i = 0; i < cntrlpoint.size(); i++){
+		//figure out contorl points
+		cntrlpoint[i] = GsVec((i-2), ((i-2)*(i-2)*(i-2))/4, 0);
+		std::cout << "herp -> " << cntrlpoint[i].x << " " << cntrlpoint[i].y << " " << cntrlpoint[i].z << std::endl;
+	};
+	evaluate_bezier(cntrlpoint.size() * 4, currentanimu, cntrlpoint);
+	for (int i = 0; i < currentanimu.size(); i++) {
+		std::cout << "derp -> " << currentanimu[i].x << " " << currentanimu[i].y << " " << currentanimu[i].z << std::endl;
 	}
-	 redraw();
-	 //glFlush();         // flush the pipeline (usually not necessary)
-	// glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
 
+	animutime = 0;
+	spaceships = currentanimu[0].z;
+	spacexx = currentanimu[0].x;
+	spaceyy = currentanimu[0].y;
  }
 
 void AppWindow::move2() {
+	
 
 	if (spaceyy>0 && spaceyy<.3) {
 

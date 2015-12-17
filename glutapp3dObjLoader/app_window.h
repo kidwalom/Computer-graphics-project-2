@@ -60,6 +60,8 @@ private:
 	double spacexx;
 	int selection;
 	bool cam_view;
+	GsArray<GsVec> currentanimu;
+	float animutime;
 	
 
 public:
