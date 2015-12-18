@@ -26,7 +26,12 @@ AppWindow::AppWindow(const char* label, int x, int y, int w, int h)
 	spacexx = 0.01;
 	spaceyy = 0.01;
 	selection = 0;
+	jx = 0;
+	jy = 0;
+	jz = 0;
 	bool run = false;
+	bool joe = false;
+	bool whole = true;
 }
 
 void AppWindow::initPrograms()
@@ -165,10 +170,10 @@ void AppWindow::glutKeyboard(unsigned char key, int x, int y)
 	case 'w': spacexx = spacexx - 0.01; redraw(); break;
 	case 'e': spaceyy = spaceyy + 0.01; redraw(); break;
 	case 'd': spaceyy = spaceyy - 0.01; redraw(); break;
-	case 'r':move1(); redraw(); break;//_rotxnew += incf;
-	case 'f': _rotxnew -= incf; redraw(); break;
-	case 't': _rotynew += incf; redraw(); break;
-	case 'g': _rotynew -= incf; redraw(); break;
+	case 'r':move1(); whole = false; redraw(); break;//_rotxnew += incf;
+	case 'f': move2(); whole = true; redraw(); break;
+	case 't': move4(); joe = true; redraw(); break;
+	case 'g':move5(); joe = false; redraw(); break;
 	case 'y': _rotglobalx -= incf; redraw(); break;
 	case 'h': _rotglobalx -= incf; redraw(); break;
 
@@ -233,10 +238,12 @@ void AppWindow::glutDisplay()
 	}
 
 	// Define our scene transformation:
-	GsMat rx, ry, stransf, spacex, spacey, spacexxx, spaceyyy, oogabooga;
+	GsMat rx, ry, stransf, spacex, spacey, spacexxx, spaceyyy, oogabooga,jetx,jety;
 	rx.rotx(_rotx);
 	ry.roty(_roty);
 	spacex.translation(spacexx, spaceyy, spaceships);
+	jetx.translation(jx, jy, jz);
+	jety.translation(jx, jy, jz);
 	stransf = rx*ry;
 	spacey.roty(_rotynew);// set the scene transformation matrix
 	spacexxx.roty(_rotxnew);
@@ -277,8 +284,8 @@ void AppWindow::glutDisplay()
 	if (_viewaxis) _axis.draw(stransf, sproj);
 	_model.draw(stransf *spacex, sproj, _light);
 	_floorball.draw(stransf*spacex*spaceyyy, sproj, _light);
-	_ballleft.draw(stransf *spacex*spacexxx, sproj, _light);
-	_ballright.draw(stransf *spacex*spacey, sproj, _light);
+	_ballleft.draw(stransf *jetx*spacexxx, sproj, _light);
+	_ballright.draw(stransf *jety*spacex*spacey, sproj, _light);
 	_world.draw(stransf, sproj, _light);
 
 
@@ -304,9 +311,9 @@ void AppWindow::glutDisplay()
 	 
 	 // when ever animutime goes over 1 it goes to the next frame
 	 // fractional component is the distance between the frames
-	 if (currentanimu.size() > 0) 
+	 if (currentanimu.size() > 0)
 	 {
-		 if (animutime > 1) 
+		 if (animutime > 1)
 		 {
 			 int overage = floor(animutime);
 			 for (int i = 0; i < overage; i++) {
@@ -321,6 +328,8 @@ void AppWindow::glutDisplay()
 			 std::cout << "new frame" << std::endl;
 			 //std::cout << " postion is" << currentanimu[0].x << " " << currentanimu[0].y << " " << currentanimu[0].z << std::endl;
 			 //
+			 _rotglobalx += 1;
+			 _rotynew -= .1;
 		 }
 
 		 GsVec a = currentanimu[0];
@@ -328,62 +337,120 @@ void AppWindow::glutDisplay()
 		 GsVec currentpostion = lerp(a, b, animutime);
 		 //std::cout << "between " << a.x << " " << a.y << " " << a.z << " and " << b.x << " " << b.y << " " << b.z << std::endl;
 		 //std::cout << animutime << " postion is" << currentpostion.x << " " << currentpostion.y << " " << currentpostion.z << std::endl;
-		 spacexx = currentpostion.x;
-		 spaceyy = currentpostion.y;
-		 spaceships = currentpostion.z;
+		if (whole == false || whole == true)
+		{
+			 spacexx = currentpostion.x;
+			 spaceyy = currentpostion.y;
+			 spaceships = currentpostion.z;
+			 redraw();
+	
+		}
+ 		if (joe == false || joe == true) {
+		 jx = currentpostion.x;
+		 jy = currentpostion.y;
+		 jz = currentpostion.z;
+		 redraw();
+		}
 	 }
-	 redraw();
+	// redraw();
 }
 void AppWindow::move1() {
 	GsArray <GsVec> cntrlpoint;
-	cntrlpoint.size(15);
-	for (int i = 0; i < cntrlpoint.size(); i++){
+	cntrlpoint.size(3);
+
+		for (int i = 0; i < cntrlpoint.size(); i++) {
+			//figure out contorl points
+			cntrlpoint[i] = GsVec((i), ((i - 1)*(i)*(i)) / 2, i);
+			std::cout << "herp -> " << cntrlpoint[i].x << " " << cntrlpoint[i].y << " " << cntrlpoint[i].z << std::endl;
+		};
+
+
+		evaluate_bezier(cntrlpoint.size() * 5, currentanimu, cntrlpoint);
+
+
+		for (int i = 0; i < currentanimu.size(); i++) {
+			std::cout << "derp -> " << currentanimu[i].x << " " << currentanimu[i].y << " " << currentanimu[i].z << std::endl;
+		}
+	
+	animutime = 0;
+	spaceships = currentanimu[0].z;
+	spacexx = currentanimu[0].x;
+	spaceyy = currentanimu[0].y;
+
+ }
+
+void AppWindow::move2() {
+	
+	GsArray <GsVec> cntrlpoint;
+	cntrlpoint.size(3);
+
+
+	for (int i = 0; i < cntrlpoint.size(); i++) {
 		//figure out contorl points
-		cntrlpoint[i] = GsVec((i-2), ((i-2)*(i-2)*(i-2))/4, 0);
+		cntrlpoint[i] = GsVec((i - 2), ((i - 2)*(i - 2)*(i - 2)) / 5, 0);
 		std::cout << "herp -> " << cntrlpoint[i].x << " " << cntrlpoint[i].y << " " << cntrlpoint[i].z << std::endl;
 	};
-	evaluate_bezier(cntrlpoint.size() * 4, currentanimu, cntrlpoint);
+	evaluate_bezier(cntrlpoint.size() * 5, currentanimu, cntrlpoint);
+	
 	for (int i = 0; i < currentanimu.size(); i++) {
 		std::cout << "derp -> " << currentanimu[i].x << " " << currentanimu[i].y << " " << currentanimu[i].z << std::endl;
 	}
+
+
 
 	animutime = 0;
 	spaceships = currentanimu[0].z;
 	spacexx = currentanimu[0].x;
 	spaceyy = currentanimu[0].y;
- }
-
-void AppWindow::move2() {
-	
-
-	if (spaceyy>0 && spaceyy<.3) {
-
-		spaceyy += .01;
-
-		if (spaceyy >.9) {
-
-			spaceyy = 0;
-		}
-	}
-	redraw();
-	//glFlush();         // flush the pipeline (usually not necessary)
-	// glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
 
 }
 
 void AppWindow::move4() {
+	GsArray <GsVec> cntrlpoint;
+	cntrlpoint.size(3);
 
-	if (spacexx >= 0 && spacexx <= 1.0) {
 
-		spacexx -= .01;
+	for (int i = 0; i < cntrlpoint.size(); i++) {
+		//figure out contorl points
+		cntrlpoint[i] = GsVec((i), ((i - 2)*(i - 2)*(i - 2)) / 5, i-1);
+		std::cout << "herp -> " << cntrlpoint[i].x << " " << cntrlpoint[i].y << " " << cntrlpoint[i].z << std::endl;
+	};
+	evaluate_bezier(cntrlpoint.size() * 5, currentanimu, cntrlpoint);
 
-		if (spacexx >.5) {
-
-			spacexx = 0;
-		}
+	for (int i = 0; i < currentanimu.size(); i++) {
+		std::cout << "derp -> " << currentanimu[i].x << " " << currentanimu[i].y << " " << currentanimu[i].z << std::endl;
 	}
-	redraw();
-	//glFlush();         // flush the pipeline (usually not necessary)
-	// glutSwapBuffers(); // we were drawing to the back buffer, now bring it to the front
+
+
+
+	animutime = 0;
+	jx = currentanimu[0].z;
+	jy = currentanimu[0].x;
+	jz = currentanimu[0].y;
+
+}
+
+void AppWindow::move5() {
+	GsArray <GsVec> cntrlpoint;
+	cntrlpoint.size(3);
+
+
+	for (int i = 0; i < cntrlpoint.size(); i++) {
+		//figure out contorl points
+		cntrlpoint[i] = GsVec((i+1), ((i - 2)*(i - 2)*(i - 2)) / 5, i-1);
+		std::cout << "herp -> " << cntrlpoint[i].x << " " << cntrlpoint[i].y << " " << cntrlpoint[i].z << std::endl;
+	};
+	evaluate_bezier(cntrlpoint.size() * 5, currentanimu, cntrlpoint);
+
+	for (int i = 0; i < currentanimu.size(); i++) {
+		std::cout << "derp -> " << currentanimu[i].x << " " << currentanimu[i].y << " " << currentanimu[i].z << std::endl;
+	}
+
+
+
+	animutime = 0;
+	jx = currentanimu[0].z;
+	jy = currentanimu[0].x;
+	jz = currentanimu[0].y;
 
 }

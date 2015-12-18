@@ -58,6 +58,11 @@ private:
 	double spaceships;
 	double spaceyy;
 	double spacexx;
+	double jx;
+	double jy;
+	double jz;
+	bool joe;
+	bool whole;
 	int selection;
 	bool cam_view;
 	GsArray<GsVec> currentanimu;
@@ -83,7 +88,7 @@ private: // functions derived from the base class
 	virtual void move1();
 	virtual void move2();
 	virtual void move4();
-
+	virtual void move5();
 };
 
 #endif // APP_WINDOW_H

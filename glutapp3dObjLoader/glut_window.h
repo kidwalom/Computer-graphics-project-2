@@ -44,7 +44,8 @@ class GlutWindow
     void redraw() { glutPostRedisplay(); }
 
     // Note that glutMainLoop never returns so your program is entirely event driven
-    void run () { glutMainLoop (); }
+
+	void run () { glutMainLoop (); }
 
    private : // member functions to be derived by the user class
     virtual void glutIdle () {}
