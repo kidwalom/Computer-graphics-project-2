@@ -1,0 +1,45 @@
+! .3do 3D model (ver 3) filename c:\dev\e3d\greengem.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert 0.000 4.000 0.000
+vert 4.000 0.000 0.000
+vert 0.000 0.000 -4.000
+vert -4.000 0.000 0.000
+vert 0.000 0.000 4.000
+vert 0.000 -4.000 0.000
+! polygon normals:
+norm 0.577 0.577 -0.577
+norm -0.577 0.577 -0.577
+norm -0.577 0.577 0.577
+norm 0.577 0.577 0.577
+norm 0.577 -0.577 -0.577
+norm -0.577 -0.577 -0.577
+norm 0.577 -0.577 0.577
+norm -0.577 -0.577 0.577
+! then, the polygons:
+poly 3 1 3 2 none
+filling 0
+colour 0 0.992 0.992 0.000
+poly 3 1 4 3 none
+filling 0
+colour 0 0.000 0.992 0.000
+poly 3 1 5 4 none
+filling 0
+colour 0 0.992 0.992 0.000
+poly 3 1 2 5 none
+filling 0
+colour 0 0.000 0.992 0.000
+poly 3 3 6 2 none
+filling 0
+colour 0 0.000 0.992 0.000
+poly 3 4 6 3 none
+filling 0
+colour 0 0.992 0.992 0.000
+poly 3 2 6 5 none
+filling 0
+colour 0 0.992 0.992 0.000
+poly 3 5 6 4 none
+filling 0
+colour 0 0.000 0.992 0.000
+! must end off with 'end'...
+end

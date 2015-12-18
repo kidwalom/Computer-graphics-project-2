@@ -1,0 +1,36 @@
+! 3do model
+! verts
+vert -4.000   0.000   2.800 
+vert  4.000   0.000   2.400 
+vert  3.000   2.200   1.600 
+vert  3.000   2.200  -1.600 
+vert  4.000   0.000  -2.400 
+vert -4.000   0.000  -2.800 
+vert -1.400   0.800   2.320 
+vert  2.300   2.000   1.700 
+vert -0.400   2.100   0.800 
+vert -0.400   2.100  -0.800 
+vert  2.300   2.000  -1.700 
+vert -1.400   0.800  -2.320 
+vert -1.000   1.300   0.200 
+vert -0.800   1.600   0.000 
+vert -1.000   1.300  -0.200 
+vert -4.400   1.200   0.200 
+vert -4.400   1.700   0.000 
+vert -4.400   1.200  -0.200
+! polys
+poly   3   1   3   2   none
+poly   4   2   3   4   5   none
+poly   3   5   4   6   none
+poly   4   1   6  12   7   none
+poly   3   7   9   8   none
+poly   4   3   8  11   4   none
+poly   3  11  10  12   none
+poly   4   7  12  10   9   none
+poly   4   8   9  10  11   none
+poly   4  14  13  16  17   none
+poly   4  15  14  17  18   none
+poly   4  13  15  18  16   none
+poly   3  16  18  17   none
+! end marker
+end

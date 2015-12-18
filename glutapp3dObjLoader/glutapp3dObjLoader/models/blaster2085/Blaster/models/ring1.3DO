@@ -1,0 +1,40 @@
+! .3do 3D model (ver 3) filename e:\Dev\OpenGL\Blaster\models\ring1.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert 10.000 0.000 -2.000
+vert 8.660 5.000 -2.000
+vert 5.000 8.660 -2.000
+vert 0.000 10.000 -2.000
+vert -5.000 8.660 -2.000
+vert -8.660 5.000 -2.000
+vert -10.000 0.000 -2.000
+vert -8.660 -5.000 -2.000
+vert -5.000 -8.660 -2.000
+vert -0.000 -10.000 -2.000
+vert 5.000 -8.660 -2.000
+vert 8.660 -5.000 -2.000
+vert 10.000 -0.000 2.000
+vert 8.660 5.000 2.000
+vert 5.000 8.660 2.000
+vert 0.000 10.000 2.000
+vert -5.000 8.660 2.000
+vert -8.660 5.000 2.000
+vert -10.000 0.000 2.000
+vert -8.660 -5.000 2.000
+vert -5.000 -8.660 2.000
+vert -0.000 -10.000 2.000
+vert 5.000 -8.660 2.000
+vert 8.660 -5.000 2.000
+! polygon normals:
+! then, the polygons:
+poly 4 4 16 15 3 none
+filling 0
+colour 0 0.984 0.992 0.000
+poly 4 23 11 12 24 none
+filling 0
+colour 0 0.984 0.992 0.000
+poly 4 8 20 19 7 none
+filling 0
+colour 0 0.984 0.992 0.000
+! must end off with 'end'...
+end

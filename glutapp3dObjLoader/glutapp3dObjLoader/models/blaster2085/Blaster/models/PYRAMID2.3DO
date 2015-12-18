@@ -1,0 +1,35 @@
+! .3do 3D model (ver 3) filename c:\dev\e3d\pyramid2.3DO
+! Created by Jum's 3D Model Editor ver 1.3
+! first, the vertices:
+vert 0.000 4.000 0.000
+vert 4.000 0.000 0.000
+vert 0.000 0.000 -4.000
+vert -4.000 0.000 0.000
+vert 0.000 0.000 4.000
+! then, the polygons:
+poly 3 1 3 2 none
+filling 1
+colour 0 0.945 0.828 0.484
+colour 1 0.945 0.828 0.484
+colour 2 0.945 0.664 0.156
+colour 3 0.945 0.664 0.156
+poly 3 1 4 3 none
+filling 1
+colour 0 0.945 0.828 0.484
+colour 1 0.945 0.828 0.484
+colour 2 0.992 0.773 0.383
+colour 3 0.992 0.773 0.383
+poly 3 1 5 4 none
+filling 1
+colour 0 0.945 0.828 0.484
+colour 1 0.945 0.828 0.484
+colour 2 0.945 0.664 0.156
+colour 3 0.945 0.664 0.156
+poly 3 1 2 5 none
+filling 1
+colour 0 0.945 0.828 0.484
+colour 1 0.922 0.805 0.430
+colour 2 0.898 0.555 0.156
+colour 3 0.898 0.555 0.156
+! must end off with 'end'...
+end

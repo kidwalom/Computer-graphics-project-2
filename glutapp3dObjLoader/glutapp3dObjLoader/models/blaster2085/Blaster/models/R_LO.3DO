@@ -1,0 +1,164 @@
+! .3do 3D model (ver 3) filename e:\minigp32\projects\gyruss\models\R_LO.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert -6.000 8.000 -2.000
+vert -6.000 -8.000 -2.000
+vert -2.000 -8.000 -2.000
+vert -2.000 -2.000 -2.000
+vert 0.000 -2.000 -2.000
+vert 2.000 -8.000 -2.000
+vert 6.000 -8.000 -2.000
+vert 4.000 -2.000 -2.000
+vert 6.000 0.000 -2.000
+vert 6.000 6.000 -2.000
+vert 4.000 8.000 -2.000
+vert -2.000 4.000 -2.000
+vert -2.000 2.000 -2.000
+vert 2.000 2.000 -2.000
+vert 2.000 4.000 -2.000
+vert -6.000 8.000 2.000
+vert -6.000 -8.000 2.000
+vert -2.000 -8.000 2.000
+vert -2.000 -2.000 2.000
+vert 2.000 -8.000 2.000
+vert 6.000 -8.000 2.000
+vert 4.000 -2.000 2.000
+vert 6.000 0.000 2.000
+vert 6.000 6.000 2.000
+vert 4.000 8.000 2.000
+vert -2.000 4.000 2.000
+vert -2.000 2.000 2.000
+vert 2.000 2.000 2.000
+vert 2.000 4.000 2.000
+vert -6.000 0.000 -2.000
+vert -6.000 0.000 2.000
+vert 0.000 -2.000 2.000
+vert -6.000 0.000 2.000
+! polygon normals:
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 -1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 0.000 1.000
+norm 0.000 1.000 0.000
+norm 0.000 -1.000 0.000
+norm 0.000 1.000 0.000
+norm 0.000 -1.000 0.000
+norm 0.000 -1.000 0.000
+norm 0.000 -1.000 0.000
+norm -1.000 0.000 0.000
+norm 1.000 0.000 0.000
+norm -1.000 0.000 0.000
+norm 1.000 0.000 0.000
+norm -0.949 -0.316 0.000
+norm 0.949 0.316 0.000
+norm 0.707 -0.707 0.000
+norm 1.000 0.000 0.000
+norm 0.707 0.707 0.000
+! then, the polygons:
+poly 4 1 30 13 12 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 30 2 3 4 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 13 30 4 14 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 14 4 8 9 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 15 14 9 10 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 10 11 1 15 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 3 12 15 1 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 5 6 7 8 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 19 18 17 31 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 27 31 16 26 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 3 29 26 16 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 25 24 29 16 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 29 24 23 28 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 23 22 19 28 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 28 19 31 27 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 22 21 20 32 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 16 1 11 25 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 26 29 15 12 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 13 14 28 27 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 19 32 5 4 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 2 17 18 3 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 20 21 7 6 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 1 16 17 2 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 12 13 27 26 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 15 29 28 14 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 3 18 19 4 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 5 32 20 6 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 8 7 21 22 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 8 22 23 9 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 10 9 23 24 none
+filling 0
+colour 0 0.289 0.641 0.781
+poly 4 10 24 25 11 none
+filling 0
+colour 0 0.289 0.641 0.781
+! must end off with 'end'...
+end

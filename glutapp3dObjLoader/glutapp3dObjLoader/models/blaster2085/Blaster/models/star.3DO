@@ -1,0 +1,189 @@
+! .3do 3D model (ver 3) filename d:\Dev\OpenGL\Fractalus\star.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert -0.469 -0.469 -0.469
+vert -0.469 0.469 -0.469
+vert 0.469 0.469 -0.469
+vert 0.469 -0.469 -0.469
+vert -0.469 -0.469 0.469
+vert -0.469 0.469 0.469
+vert 0.469 0.469 0.469
+vert 0.469 -0.469 0.469
+vert 2.344 0.000 0.000
+vert -2.344 0.000 0.000
+vert 0.000 0.000 -2.344
+vert 0.000 0.000 2.344
+vert 0.000 2.344 0.000
+vert 0.000 -2.344 0.000
+! polygon normals:
+norm 0.000 -0.243 0.970
+norm 0.970 -0.243 0.000
+norm 0.000 -0.243 -0.970
+norm -0.970 -0.243 0.000
+norm 0.000 0.243 -0.970
+norm 0.970 0.243 0.000
+norm 0.000 0.243 0.970
+norm -0.970 0.243 0.000
+norm 0.243 -0.970 0.000
+norm 0.243 0.000 -0.970
+norm 0.243 0.970 0.000
+norm 0.243 0.000 0.970
+norm -0.243 -0.970 0.000
+norm -0.243 0.000 -0.970
+norm -0.243 0.970 0.000
+norm -0.243 0.000 0.970
+norm 0.000 -0.970 0.243
+norm 0.000 0.970 0.243
+norm -0.970 0.000 0.243
+norm 0.000 -0.970 -0.243
+norm 0.000 0.970 -0.243
+norm 0.970 0.000 -0.243
+norm -0.970 0.000 -0.243
+norm 0.970 0.000 0.243
+! then, the polygons:
+poly 3 14 5 8 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 14 8 4 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 14 4 1 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 14 1 5 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 13 2 3 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 13 3 7 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 13 7 6 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 13 6 2 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 9 4 8 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 9 3 4 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 9 7 3 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 9 8 7 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 10 5 1 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 10 1 2 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 10 2 6 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 10 6 5 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 12 8 5 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 12 6 7 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 12 5 6 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 11 1 4 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 11 3 2 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 11 4 3 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 11 2 1 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+poly 3 12 7 8 none
+filling 1
+colour 0 0.000 0.000 0.000
+colour 1 0.988 0.843 0.000
+colour 2 0.988 0.843 0.000
+colour 3 0.988 0.529 0.000
+! must end off with 'end'...
+end

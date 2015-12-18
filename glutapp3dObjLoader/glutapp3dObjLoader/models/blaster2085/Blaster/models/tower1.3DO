@@ -1,0 +1,55 @@
+! .3do 3D model (ver 3) filename e:\Dev\OpenGL\Blaster2\models\tower1.3DO
+! Created by Jum's 3D Model Editor ver 1.9
+! first, the vertices:
+vert 5.000 20.000 0.000
+vert 2.500 20.000 4.330
+vert -2.500 20.000 4.330
+vert -5.000 20.000 0.000
+vert -2.500 20.000 -4.330
+vert 2.500 20.000 -4.330
+vert 2.500 0.000 0.000
+vert 1.250 0.000 2.165
+vert -1.250 0.000 2.165
+vert -2.500 0.000 0.000
+vert -1.250 0.000 -2.165
+vert 1.250 0.000 -2.165
+! polygon normals:
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+norm 0.250 0.000 -0.433
+! then, the polygons:
+poly 4 6 12 7 1 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 1 7 8 2 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 2 8 9 3 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 3 9 10 4 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 4 10 11 5 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 5 11 12 6 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 5 6 3 4 none
+filling 0
+colour 0 0.656 0.773 0.852
+poly 4 6 1 2 3 none
+filling 0
+colour 0 0.656 0.773 0.852
+! must end off with 'end'...
+end
