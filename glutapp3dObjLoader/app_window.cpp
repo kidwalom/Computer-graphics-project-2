@@ -78,7 +78,7 @@ void AppWindow::loadModel(int model)
 			f2=0.15f; _file2="../models/ballfloorobj.obj"; 
 			f3 = 0.10f; _file3 = "../models/ballleft.obj";
 			f4 = 0.10f; _file4 = "../models/ballright.obj";
-			_file5 = "../models/world.obj";
+			_file5 = "../models/ex.obj";
 			_file6 = "../models/space.obj";
 	
 	std::cout << "Loading space ship " << _file << "...\n";
@@ -437,10 +437,10 @@ void AppWindow::move5() {
 
 	for (int i = 0; i < cntrlpoint.size(); i++) {
 		//figure out contorl points
-		cntrlpoint[i] = GsVec((i+1), ((i - 2)*(i - 2)*(i - 2)) / 5, i-1);
+		cntrlpoint[i] = GsVec((i-2), ((i - 2)*(i - 2)*(i - 2)) / 4, 0);
 		std::cout << "herp -> " << cntrlpoint[i].x << " " << cntrlpoint[i].y << " " << cntrlpoint[i].z << std::endl;
 	};
-	evaluate_bezier(cntrlpoint.size() * 5, currentanimu, cntrlpoint);
+	evaluate_bezier(cntrlpoint.size() * 4, currentanimu, cntrlpoint);
 
 	for (int i = 0; i < currentanimu.size(); i++) {
 		std::cout << "derp -> " << currentanimu[i].x << " " << currentanimu[i].y << " " << currentanimu[i].z << std::endl;

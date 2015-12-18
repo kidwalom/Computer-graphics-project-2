@@ -61,7 +61,10 @@ private:
 	double jx;
 	double jy;
 	double jz;
-	bool joe;
+	double ja;
+	double jb;
+	double jc;
+	int joe;
 	bool whole;
 	int selection;
 	bool cam_view;
